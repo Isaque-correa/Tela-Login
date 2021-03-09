@@ -1,0 +1,135 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+section{
+    width: 350px;
+}
+.banner-imagem{
+    padding: 0;
+    margin: 0;
+}
+.img-fluid{
+   padding:5px 0px 5px 5px;
+   height: 100vh;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+.formulario{
+    padding: 10px;
+    padding-right: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.embrulho__formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.paragrafo__formulario{
+    margin: 0;
+    font-size: 16px;
+}
+.titulo__formulario{
+    font-size: 30px;
+    font-weight: bold;
+}
+label{
+    display: block;
+}
+#msg_email, #msg_senha{
+    color: rgb(255, 0, 0);
+    font-size: 13px;
+}
+.borda-vermelha{
+    border: 3px solid red;
+}
+li{
+    
+    list-style-type: none;
+}
+.link__formulario{
+    font-size: 16px;
+}
+.botao_primario{
+    background: #1ac53f;
+    color: white;
+    display: block;
+    width: 100%;
+    
+}
+.botao_secundario{
+    background: #2D3748;
+    color: white;
+    margin-top: 2%;
+    width: 100%;
+}
+.botao_primario:hover{
+    background-color: rgb(255, 254, 254);
+    border-color: #1ac53f;
+    transition: 900ms;
+    cursor: pointer;
+}
+.botao_secundario:hover{
+    background-color: rgb(255, 254, 254);
+    border-color: #2D3748;
+    transition: 900ms;
+    cursor: pointer;
+}
+.cadastro__formulario{
+    display: block;
+    width: 100%;
+    padding-top: 20%;
+    margin-bottom: 0;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+@media(max-width:991px){
+    .formulario{
+        display: flex;
+        justify-content: center;
+        text-align:left;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+        padding-right:14px ;
+    }
+    .embrulho__formulario{
+        /* padding: 50px 15px 40px;*/
+         border-radius: 10px;
+         border: 1px solid #aaa;
+         background-color: rgba(255, 255, 255, 0.9);
+         /*width: 100%;*/
+        /* margin: 0 15px;*/
+        margin-top: 0;
+     }
+    section{
+        padding: 50px 0% 10px 0%;
+        width: auto;
+    }
+    .imagem{
+        padding: 0;
+    }
+    .corpo{
+        background-image: url(/imagens/image\ 1.png);
+        background-size: cover;
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .link__formulario{
+        font-size: 16px;
+    }
+    .cadastro__formulario{
+        padding-top: 0;
+        padding-bottom: 5px;
+    }
+}
+
+
+
+

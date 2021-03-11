@@ -40,7 +40,7 @@ section{
 label{
     display: block;
 }
-#msg_email, #msg_senha{
+.mensagem_erro{
     color: rgb(255, 0, 0);
     font-size: 13px;
 }
@@ -87,47 +87,6 @@ li{
     font-size: 15px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-}
-@media(max-width:991px){
-    .formulario{
-        display: flex;
-        justify-content: center;
-        text-align:left;
-        flex-direction: column;
-        height: 100vh;
-        width: 100vw;
-        padding-right:14px ;
-    }
-    .embrulho__formulario{
-        /* padding: 50px 15px 40px;*/
-         border-radius: 10px;
-         border: 1px solid #aaa;
-         background-color: rgba(255, 255, 255, 0.9);
-         /*width: 100%;*/
-        /* margin: 0 15px;*/
-        margin-top: 0;
-     }
-    section{
-        padding: 50px 0% 10px 0%;
-        width: auto;
-    }
-    .imagem{
-        padding: 0;
-    }
-    .corpo{
-        background-image: url(/imagens/image\ 1.png);
-        background-size: cover;
-        height: 100vh;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-    .link__formulario{
-        font-size: 16px;
-    }
-    .cadastro__formulario{
-        padding-top: 0;
-        padding-bottom: 5px;
-    }
 }
 
 

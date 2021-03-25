@@ -15,13 +15,11 @@ formulario.submit(function(event){
         var mensagemErro = item.data('msg-obrigatorio');
         var formGrup = item.parent();
         var mensagemErroSpan = formGrup.find('.mensagem_erro');
-        var expressaoErro = item.rag
         item.removeClass('borda-vermelha');
         
         if(value.length == 0 && obrigatorio == true){
             item.addClass('borda-vermelha');
             mensagemErroSpan.text(mensagemErro);
-            
         }
    });
 });

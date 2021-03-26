@@ -25,16 +25,20 @@
                                     <p class="paragrafo__formulario">Seja Bem-vindo</p>
                                     <h1 class="titulo__formulario" >Preencha seus Dados</h1>
                                     <div class="form-group">
-                                        <input type="name" class="form-control" name="nome"  id="nome" aria-describedby="emailHelp" placeholder="Nome e Sobrenome">
+                                        <span class="mensagem_erro"></span>
+                                        <input type="text" class="form-control" name="nome"  id="text"  data-msg-obrigatorio="campo de nome  obrigatorio" required placeholder="Nome e Sobrenome">
                                     </div>
                                     <div class="form-group">
-                                        <input type="email" class="form-control campo-email" name="email"  required pattern="/^[a-9-z0.]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$/i" id="email" aria-describedby="emailHelp" placeholder="E-mail">
+                                        <span class="mensagem_erro"></span>
+                                        <input type="email" class="form-control campo-email" name="email"  data-msg-obrigatorio="campo de email obrigatorio"  required pattern="/^[a-9-z0.]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$/i" id="email" aria-describedby="emailHelp" placeholder="E-mail">
                                     </div>
                                     <div class="form-group">
-                                        <input type="password" class="form-control" name="senha" id="senha"  required  placeholder="Senha">
+                                        <span class="mensagem_erro"></span>
+                                        <input type="password" class="form-control" name="senha" id="senha"  data-msg-obrigatorio="campo de senha obrigatorio"  required  placeholder="Senha">
                                     </div>
                                     <div class="form-group">
-                                        <input type="password" class="form-control" name="senha" id="senha"  required  placeholder="Confirma senha">
+                                        <span class="mensagem_erro"></span>
+                                        <input type="password" class="form-control" name="senha" id="senha"  data-msg-obrigatorio="campo de senha obrigatorio"  required  placeholder="Confirma senha">
                                     </div>
                                     <button type="submit" href="#" class="btn botao_primario" id="cadastrar">Cadastrar</button>
                                     
@@ -45,7 +49,8 @@
                 </div>
             </div>
         </main>
-        
+        <script src="/js/jquery.js"></script>
+        <script src="/js/validacao.js"></script>
     </body>
     
 </html>

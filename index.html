@@ -12,7 +12,11 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     </head>
     <body class="corpo">
-        <main>
+
+        <!--******************************TELA DE LOGIN*********************************-->
+
+
+        <div class="tela__login">
             <div class="container-fluid">
                 <div class="row ">
                     <figure class="col-md-12 col-12 d-none d-lg-block col-lg-6 banner-imagem">
@@ -27,12 +31,12 @@
                                     <div class="form-group">
                                         <label for="email">Email</label>
                                         <span class="mensagem_erro"></span>
-                                        <input type="email" class="form-control campo-email" name="email" data-msg-obrigatorio="campo vazio" required pattern="/^[a-9-z0.]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$/i" id="email" aria-describedby="emailHelp" placeholder="nome@exemplo.com">
+                                        <input type="email" class="form-control campo-email" name="email" data-msg-obrigatorio="Preencha o campo de E-mail" required pattern="/^[a-9-z0.]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$/i" id="email" aria-describedby="emailHelp" placeholder="nome@exemplo.com">
                                     </div>
                                     <div class="form-group">
                                         <label for="password">Senha</label>
                                         <span class="mensagem_erro"></span>
-                                        <input type="password" class="form-control" name="senha" id="senha" data-msg-obrigatorio="campo vazio" required  placeholder="Digite sua senha">
+                                        <input type="password" class="form-control" name="senha" id="senha" data-msg-obrigatorio="Preencha o campo de senha" required  placeholder="Digite sua senha">
                                     </div>
                                     <div class="row">
                                         <div class="col-4">
@@ -44,25 +48,97 @@
                                         <div class="col">
                                             <div class="d-flex flex-row-reverse bd-highlight">
                                                 <ul class="p-0">
-                                                    <li><a href="#" class="link__formulario">Esqueceu a senha?  </a></li>
+                                                    <li><a href="#" class="botao__recuperar-senha" type="submit">Esqueceu a senha?</a></li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
                                     <button type="submit" href="#" class="btn botao_primario" id="entrar">Entrar</button>
-                                    <button type="button" class="btn botao_secundario"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+                                    <!-- <button type="button" class="btn botao_secundario"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
                                         <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
-                                    </svg>Entrar com google</button>
+                                    </svg>Entrar com google</button> -->
                                 </section>
                                 <div class="container paragrafo">
-                                    <p class="cadastro__formulario">Não tem conta?<a href="/cadastro.html">Cadastra-se</a></p>
+                                    <p class="cadastro__formulario">Não tem conta?<a class="botao__cadastro" href="#" type="submit">Cadastra-se</a></p>
                                 </div>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
-        </main>
+        </div>
+
+        
+        <!--******************************TELA DE CADASTRO*********************************-->
+
+
+        <div class="tela__cadastro" style="display: none;">
+            <div class="container-fluid">
+                <div class="row">
+                    <figure class="col-md-12 col-12 d-none d-lg-block col-lg-6 banner-imagem">
+                       <figcaption><img src="/imagens/montanha2.jpg" class="img-fluid" alt=""></figcaption> 
+                    </figure>
+                    <div class="col-md-12 col-12 col-lg-6 formulario">
+                        <form class="formValidar" novalidate>
+                            <div class="embrulho__formulario">
+                                <section>
+                                    <p class="paragrafo__formulario">Seja Bem-vindo</p>
+                                    <h1 class="titulo__formulario" >Preencha seus Dados</h1>
+                                    <div class="form-group">
+                                        <span class="mensagem_erro"></span>
+                                        <input type="text" class="form-control" name="nome"  id="text"  data-msg-obrigatorio="campo de nome  obrigatorio" required placeholder="Nome e Sobrenome">
+                                    </div>
+                                    <div class="form-group">
+                                        <span class="mensagem_erro"></span>
+                                        <input type="email" class="form-control campo-email" name="email"  data-msg-obrigatorio="campo de email obrigatorio"  required pattern="/^[a-9-z0.]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$/i" id="email" aria-describedby="emailHelp" placeholder="E-mail">
+                                    </div>
+                                    <div class="form-group">
+                                        <span class="mensagem_erro"></span>
+                                        <input type="password" class="form-control" name="senha" id="senha"  data-msg-obrigatorio="campo de senha obrigatorio"  required  placeholder="Senha">
+                                    </div>
+                                    <div class="form-group">
+                                        <span class="mensagem_erro"></span>
+                                        <input type="password" class="form-control" name="confirmaSenha" id="confirmaSenha"  data-msg-obrigatorio="campo de senha obrigatorio" data-msg-confirmaSenha="Senha diferente" data-compare-to="senha"  required  placeholder="Confirma senha">
+                                    </div>
+                                    <button type="submit" href="#" class="btn botao_primario" >Cadastrar</button>
+                                    <button type="submit" href="#" class="btn botao_primario cancelar" >Cancelar</button>
+                                    
+                                </section>
+                            </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ************* CAMPO DO ESQUECEU A SENHA **************** -->
+
+        <div class="tela__recuperar" style="display: none;">
+            <div class="container-fluid">
+                <div class="row">
+                    <figure class="col-md-12 col-12 d-none d-lg-block col-lg-6 banner-imagem">
+                        <figcaption><img src="/imagens/montanha1.jpg" class="img-fluid" alt=""></figcaption>
+                    </figure>
+                    <div class="col-md-12 col-12 col-lg-6 formulario">
+                        <form class="formValidar" novalidate>
+                            <div class="embrulho__formulario">
+                                <section>
+                                    <p class="paragrafo__formulario">Esqueceu a senha?</p>
+                                    <h1 class="titulo__formulario">Digite a infromação abaixo</h1>
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <span class="mensagem_erro"></span>
+                                        <input type="email" class="form-control campo-email" name="email"  data-msg-obrigatorio="campo de email obrigatorio"  required pattern="/^[a-9-z0.]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$/i" id="email" aria-describedby="emailHelp" placeholder="E-mail">
+                                    </div>
+                                    <button type="submit" href="#" class="btn botao_primario" >Enviar</button>
+                                    <button type="submit" href="#" class="btn botao_primario cancelar" >Cancelar</button>
+                                </section>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
         <script src="/js/jquery.js"></script>
         <script src="/js/validacao.js"></script>
 

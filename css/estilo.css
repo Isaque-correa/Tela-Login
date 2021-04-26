@@ -61,6 +61,12 @@ li{
     width: 100%;
     
 }
+.cancelar{
+    background: #2D3748;
+    color: white;
+    margin-top: 2%;
+    width: 100%;
+}
 .botao_secundario{
     background: #2D3748;
     color: white;

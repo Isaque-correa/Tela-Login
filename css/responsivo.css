@@ -9,7 +9,7 @@
         padding-right:14px ;
     }
     .embrulho__formulario{
-        /* padding: 50px 15px 40px;*/
+         padding: 0px 15px 0px;
          border-radius: 10px;
          border: 1px solid #aaa;
          background-color: rgba(255, 255, 255, 0.9);
@@ -25,7 +25,7 @@
         padding: 0;
     }
     .corpo{
-        background-image: url(/imagens/image\ 1.png);
+        background-image: linear-gradient(rgb(46, 46, 117), rgb(55, 71, 100),  transparent, rgb(72, 87, 107));
         background-size: cover;
         height: 100vh;
         background-position: center;
